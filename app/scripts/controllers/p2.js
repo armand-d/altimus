@@ -146,4 +146,14 @@ angApp.controller('P2Ctrl', function($rootScope,$http,$scope) {
     $('.carousel-control').on('click',function(e){
     	e.preventDefault();
     });
+
+    $('#pic-active').on('click', function(){
+        $('#no-click').show();
+        $('#no-click').html('<img src="'+$(this).attr('src')+'"">');
+        $('#no-click').find('img').Center();
+    });
+
+    $('#no-click').on('click', function(){
+        $('#no-click').hide();
+     });
 });
