@@ -1,0 +1,47 @@
+<div class="p2" ng-init="showClients()">
+	<center class="head">
+		<h3>VOUS</h3>
+		<h2>- Nos Clients -</h2>
+	<!-- <p style="margin-top:50px; color: #FFF; font-size: 150%; font-family: Geometria;">Ils arrivent !!</p> -->
+	</center>
+	<div class="content-infos" ng-hide="p2.video">
+		<div class="row">
+			<span class="close"><i class="fa fa-close"></i></span>
+			<div class="pic col-md-6">
+				<img id="pic-active" src="images/clients/{{p2.imgs[0]}}">
+			</div>
+			<div class="infos col-md-6">
+				<h2>{{p2.name}}</h2>
+				<h3>{{p2.subtitle}}</h3>
+				<p>{{p2.shortDesc}}</p>
+				<p>{{p2.longDesc}}</p>
+				<a ng-href="{{p2.site}}" target="_blank" ng-show="p2.site">Cliquez-ici pour voir le site.</a>			
+			</div>
+		</div>
+		<div class="pics row col-md-12">
+			<li class="item" ng-click="showPic(img)" ng-repeat="img in p2.imgs track by $index" ng-if=" img != null">
+				<img src="images/clients/{{img}}" ng-show="img">
+			</li>
+		</div>
+	</div>
+
+	<div class="content-infos" ng-show="p2.video">
+		<div class="row">
+			<span class="close"><i class="fa fa-close"></i></span>
+			<center>
+				<iframe ng-src="" id="iframe-front" width="400" height="250"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<div style="width:60%;display:block;">
+				<h3>{{p2.name}}</h3>
+				<p>{{p2.shortDesc}}</p>
+				</div>
+			</center>
+		</div>
+	</div>
+
+	<div class="clients-front">
+		<li ng-repeat="client in p2.clients" ng-click="showClient(client.name)" class="client">
+			<img src="images/clients/{{client.logo}}" class="text-center">
+			<p class="client-name text-center">{{client.name}}</p>
+		</li>
+	</div>
+</div>

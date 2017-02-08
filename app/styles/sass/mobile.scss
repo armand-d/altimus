@@ -1,0 +1,13 @@
+@media screen and (max-width: 770px) {
+	
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		.vm {
+			padding: 2%;
+		}
+		display: block;
+
+	}
+}

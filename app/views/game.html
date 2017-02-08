@@ -1,0 +1,87 @@
+<div class="game">
+	<div class="game-couv row" ng-hide="play">
+		<div class="col-md-6">
+			<p>Plein phare sur 2016 !</p>
+			<h3>Gagnez 2 nuits* <br>pour 2 personnes dans <br>le Phare de Kerbel <br>en Bretagne</h3>
+			<ul>
+				<li><img src="images/Kerbel 01.jpg" alt=""></li><li><img src="images/Kerbel 02.jpg" alt=""></li><li><img src="images/Kerbel 03.jpg" alt=""></li>
+			</ul>
+			<small>*Du samedi 30 avril au lundi 2 mai 2016</small>
+		</div>
+		<div class="col-md-6">
+			<ul>
+				<li><img src="images/kerbel-traite.jpg" alt=""></li>
+			</ul>
+			<h4>Tentez votre chance pour vivre une expérience <br>insolite à 25 mètres de hauteur !</h4>
+			<p>Inscrivez-vous sur altimus360.com pour remporter un week-end à 360°. <br>
+			Date limite d’inscription : 15 février 2016 <br>
+			Phare de Kerbel : <a href="http://www.pharedekerbel.com" target="_blanck"><b>http://www.pharedekerbel.com</b></a></p>
+			<button class="btn btn-info" ng-click="play = true">PARTICIPER !</button>
+		</div>
+	</div>
+	<div class="game-form" ng-show="play"> 
+		 <form class="form-horizontal col-md-6 col-md-offset-3" ng-submit="inscGame()" role="form">
+		 <p class="text-center">Les champs marqués d'un * sont obligatoires.</p>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="first-name">*Prénom:</label>
+		    <div class="col-sm-10">
+		      <input ng-model="game.firstName" type="text" class="form-control" id="first-name" placeholder="Prénom" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="last-name">*Nom:</label>
+		    <div class="col-sm-10">
+		      <input ng-model="game.lastName" type="text" class="form-control" id="last-name" placeholder="Nom" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="society">*Société:</label>
+		    <div class="col-sm-10">
+		      <input ng-model="game.society" type="text" class="form-control" id="society" placeholder="Société" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="function">*Fonction:</label>
+		    <div class="col-sm-10">
+		      <input ng-model="game.fonction" type="text" class="form-control" id="function" placeholder="Fonction" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="phone">*Téléphone:</label>
+		    <div class="col-sm-10">
+		      <input ng-model="game.phone" type="text" class="form-control" id="phone" placeholder="Téléphone" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="mobile">Portable:</label>
+		    <div class="col-sm-10">
+		      <input ng-model="game.mobile" type="text" class="form-control" id="mobile" placeholder="Téléphone portable">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="email">*Email:</label>
+		    <div class="col-sm-10">
+		      <input ng-model="game.email" type="email" class="form-control" id="email" placeholder="Email" required>
+		    </div>
+		  </div>
+		<div class="form-group">
+			<div class="form-group">
+			    <label for="question">Quel serait le programme de votre week-end à 360° ?</label>
+		      	<textarea ng-model="game.question" class="form-control" id="question" placeholder="..."></textarea>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <center>
+		      	<button type="submit" class="btn btn-default">Envoyer</button>
+		      </center>
+		    </div>
+		  </div>
+		</form>
+	</div>
+	<div class="game-success text-center hide">
+		<h2>Merci de votre participation !</h2>
+		<p>Nous vous contacterons prochainement... <br> L'équipe d'Altimus360°</p>
+		<!-- <a href="/accueil">ACCEUIL</a> -->
+	</div>
+</div>

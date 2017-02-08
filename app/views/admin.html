@@ -1,0 +1,194 @@
+<div class="admin">
+<!-- Large modal -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    	<div class="row">
+    		<div class="pic col-md-6">
+    			<div id="myCarousel" class="carousel slide" data-ride="carousel" ng-hide="admin.video">
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item" ng-class="{active : img == admin.imgs[0]}" ng-repeat="img in admin.imgs track by $index" ng-if=" img != null">
+	    				<img src="images/clients/{{img}}" ng-show="img">
+	    			</div>
+				  </div>
+				  <!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				<iframe ng-show="admin.video" ng-src="" id="iframe" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    		</div>
+			<div class="info col-md-6">
+				<form role="form" ng-submit="clientModify(admin.name)">
+					<h1>{{admin.name}}</h1>
+					<div class="form-group">
+						<!-- <label for="subtitle">Subtitle</label> -->
+						<input type="text" ng-value="admin.subtitle" ng-model="admin.subtitle" class="form-control" id="subtitle" placeholder="Subtitle"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="short-desc">Short desc</label> -->
+						<input type="text" ng-value="admin.shortDesc" ng-model="admin.shortDesc" class="form-control" id="short-desc" placeholder="Short desc"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="long-desc">Long desc</label> -->
+						<textarea rows="5" ng-model="admin.longDesc" class="form-control" id="long-desc" placeholder="Long desc">{{admin.longDesc}}</textarea>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-1">img 1</label> -->
+						<input type="text" ng-value="admin.logo" ng-model="admin.logo" class="form-control" id="logo" placeholder="logo"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-1">img 1</label> -->
+						<input type="text" ng-value="admin.imgs[0]" ng-model="admin.imgs[0]" class="form-control" id="img-1" placeholder="img name"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-2">img 2</label> -->
+						<input type="text" ng-value="admin.imgs[1]" ng-model="admin.imgs[1]" class="form-control" id="img-2" placeholder="img name"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-2">img 2</label> -->
+						<input type="text" ng-value="admin.imgs[2]" ng-model="admin.imgs[2]" class="form-control" id="img-3" placeholder="img name"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-2">img 2</label> -->
+						<input type="text" ng-value="admin.imgs[3]" ng-model="admin.imgs[3]" class="form-control" id="img-4" placeholder="img name"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-2">img 2</label> -->
+						<input type="text" ng-value="admin.imgs[4]" ng-model="admin.imgs[4]" class="form-control" id="img-5" placeholder="img name"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-1">img 1</label> -->
+						<input type="text" ng-value="admin.video" ng-model="admin.video" class="form-control" id="video" placeholder="Vimeo id"/>
+					</div>
+					<div class="form-group">
+						<!-- <label for="img-1">img 1</label> -->
+						<input type="text" ng-value="admin.site" ng-model="admin.site" class="form-control" id="site" placeholder="site url"/>
+					</div>
+					<input type="submit" class="btn btn-info" value="Modify">
+				</form><button style="display:inline-block" class="btn btn-danger" ng-click="clientDelete(admin.name)">Delete</button>
+			</div>
+    	</div>
+    </div>
+  </div>
+</div>
+
+<!-- // end modal -->
+	<center>
+		<h2>Admin</h2>
+	</center>
+	<form role="form" ng-submit="loginAdmin()" ng-hide="isLogged">
+		<br><br>
+		<div class="form-group col-md-4 col-md-offset-4">
+			<input type="password" ng-model="admin.password" class="form-control" id="password" placeholder="Password"/>
+		</div>
+		<input type="submit" class="btn btn-success" value="Submit">
+	</form>
+	<div ng-init="showClients()" ng-show="isLogged">
+		<div class="magane-clients">
+			<form role="form" ng-submit="addClient()">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" ng-model="admin.name" class="form-control" id="name" placeholder="Name"/>
+				</div>
+				<div class="form-group">
+					<label for="subtitle">Subtitle</label>
+					<input type="text" ng-model="admin.subtitle" class="form-control" id="subtitle" placeholder="Subtitle"/>
+				</div>
+				<div class="form-group">
+					<label for="short-desc">Short desc</label>
+					<input type="text" ng-model="admin.shortDesc" class="form-control" id="short-desc" placeholder="Short desc"/>
+				</div>
+				<div class="form-group">
+					<label for="long-desc">Long desc</label>
+					<textarea rows="5" ng-model="admin.longDesc" class="form-control" id="long-desc" placeholder="Long desc"></textarea>
+				</div>
+				<p class="text-danger">Le logo doit être carré</p>
+				<div class="form-group">
+					<label for="logo">logo</label>
+					<input type="text" ng-model="admin.logo" class="form-control" id="logo" placeholder="logo name"/>
+				</div>
+				<p class="text-danger">Les images doivent faire 500px/330px</p>
+				<div class="form-group">
+					<label for="img-1">img 1</label>
+					<input type="text" ng-model="admin.img1" class="form-control" id="img-1" placeholder="img name"/>
+				</div>
+				<div class="form-group">
+					<label for="img-2">img 2</label>
+					<input type="text" ng-model="admin.img2" class="form-control" id="img-2" placeholder="img name"/>
+				</div>
+				<div class="form-group">
+					<label for="img-3">img 3</label>
+					<input type="text" ng-model="admin.img3" class="form-control" id="img-3" placeholder="img name"/>
+				</div>
+				<div class="form-group">
+					<label for="img-4">img 4</label>
+					<input type="text" ng-model="admin.img4" class="form-control" id="img-4" placeholder="img name"/>
+				</div>
+				<div class="form-group">
+					<label for="img-5">img 5</label>
+					<input type="text" ng-model="admin.img5" class="form-control" id="img-5" placeholder="img name"/>
+				</div>
+				<div class="form-group">
+					<!-- <label for="img-1">img 1</label> -->
+					<input type="text" ng-model="admin.video" class="form-control" id="video" placeholder="Vimeo id"/>
+				</div>
+				<div class="form-group">
+					<!-- <label for="img-1">img 1</label> -->
+					<input type="text" ng-value="admin.site" ng-model="admin.site" class="form-control" id="site" placeholder="site url"/>
+				</div>
+				<input type="submit" class="btn btn-default" value="Submit">
+			</form>
+			<br>
+			<hr>
+			<br>
+			<div id="all-clients">
+				<li ng-repeat="client in admin.clients" ng-click="showClient(client.name)" class="client">
+					<img src="images/clients/{{client.logo}}" class="text-center">
+					<p class="text-center" style="color:#000">{{client.name}}</p>
+				</li>
+			</div>
+			<br>
+			<hr>
+			<br>
+				<button class="btn btn-danger" ng-click="removeAll()" ng-show="toto">Delte all clients</button>
+		</div>
+		<br>
+		<div class="manage-registred">
+			<h2 class="text-center">List of registered</h2>
+			<br>
+			<table class="table table-bordered">
+			    <thead>
+			      <tr>
+			        <th>First name</th>
+			        <th>Last name</th>
+			        <th>Society</th>
+			        <th>Function</th>
+			        <th>Phone</th>
+			        <th>Mobile</th>
+			        <th>Email</th>
+			        <th>Question</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr ng-repeat="user in admin.users track by $index">
+			        <td>{{user.firstName}}</td>
+			        <td>{{user.lastName}}</td>
+			        <td>{{user.society}}</td>
+			        <td>{{user.fonction}}</td>
+			        <td>{{user.phone}}</td>
+			        <td>{{user.mobile}}</td>
+			        <td>{{user.email}}</td>
+			        <td>{{user.question}}</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			  <button class="btn btn-danger" ng-click="removeAllRegistered()" ng-show="toto">Delete all registered</button>
+		</div>
+	</div>
+</div>

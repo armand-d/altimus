@@ -1,0 +1,153 @@
+{
+  "game": [],
+  "client": [
+    {
+      "name": "PANORAMA",
+      "img": [
+        "Panorama/panorama-1.jpg",
+        "Panorama/panorama-2.jpg",
+        "Panorama/panorama-3.jpg",
+        null,
+        null
+      ],
+      "longDesc": "Le Groupe Bayard nous a choisi pour piloter le lancement de la nouvelle formule de Panorama. Au travers d’outils de promotion et d’autopromotion, nous avons accompagné Panorama dans sa stratégie de conquête et de fidélisation de ses abonnés.",
+      "logo": "Panorama/logo.jpg"
+    },
+    {
+      "name": "ZARA France",
+      "img": [
+        "Zara/Zara-1.jpg",
+        "Zara/Zara-2.jpg",
+        "Zara/Zara-3.jpg",
+        null,
+        null
+      ],
+      "longDesc": "Zara France nous a choisi pour l’accompagner dans la création de la Mission Handicap. Afin de sensibiliser les salariés de Zara à la diversité et au handicap, nous avons réalisé une campagne de communication interne. Les différents supports ont pour but d’informer et de rassurer les salariés mais sont aussi de véritables outils de management.",
+      "logo": "Zara/logo.jpg"
+    },
+    {
+      "name": "GE Healthcare",
+      "img": [
+        "GE/GE-1.jpg",
+        "GE/GE-2.jpg",
+        "GE/GE-3.jpg",
+        "GE/GE-4.jpg",
+        "GE/GE-5.jpg"
+      ],
+      "longDesc": "Depuis plus de 3 ans, nous accompagnons GE Healthcare dans la sensibilisation des salariés à la Mission Handicap. Nous avons réalisé chaque année une campagne interne lors de la SEPH mais aussi des campagnes globales de motivations pendant la SEPH. Nous avons décliné des outils pour les salons et pour faciliter le recrutement de personnes handicapées.",
+      "logo": "GE/logo.jpg"
+    },
+    {
+      "name": "CFRT - Dieu m'est témoin",
+      "img": [
+        "CFRT/CFRT-1.jpg",
+        "CFRT/CFRT-2.jpg",
+        "CFRT/CFRT-3.jpg",
+        null,
+        null
+      ],
+      "longDesc": "Dieu m’est témoin, émission réalisée par le CFRT diffusée en Outre-Mer, a fait appel à nous pour la réalisation d’une campagne multi-canal de promotion et de levée de fonds. Nous les avons conseillés et accompagnés dans la stratégie marketing, la production des outils, plan média, plan fichiers…",
+      "logo": "CFRT/logo.jpg"
+    },
+    {
+      "name": "Nos Petits Frères et Soeurs",
+      "img": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "longDesc": "Comment faire connaître l’association auprès des enfants dans les écoles ? Face à cette problématique, l’association Nos Petits Frères et Sœurs nous a choisi pour réaliser un film d’animation adapté aux enfants comme aux adultes.",
+      "logo": "NPFS/logo_npfs.jpg",
+      "video": "140088116",
+      "shortDesc": "Comment faire connaître l’association auprès des enfants dans les écoles ? Face à cette problématique, l’association Nos Petits Frères et Sœurs nous a choisi pour réaliser un film d’animation adapté aux enfants comme aux adultes."
+    },
+    {
+      "name": "Euler Hermes",
+      "img": [
+        "Euler/Euler-1.jpg",
+        "Euler/Euler-2.jpg",
+        null,
+        null,
+        null
+      ],
+      "longDesc": "Le numéro 1 de l’assurance-crédit en France Euler Hermes, nous a choisi pour concevoir et réaliser la campagne promotionnelle du lancement d’une nouvelle offre d’assurance contre la fraude. Nous déclinons les campagnes de promotion de ce produit.",
+      "logo": "Euler/logo.jpg"
+    },
+    {
+      "name": "Fondation Saint-Jean de Dieu",
+      "img": [
+        "OHSJD/OHSJD-1.jpg",
+        "OHSJD/OHSJD-2.jpg",
+        "OHSJD/OHSJD-3.jpg",
+        null,
+        null
+      ],
+      "longDesc": "Depuis plus d’un an, nous accompagnons la Fondation Saint-Jean de Dieu dans ses problématiques de communication : refonte des éléments de langage, conception du nouveau site, réalisation d’une plaquette institutionnelle, campagne de fundraising, e-marketing, la décoration des locaux, l’opération spéciale pour la Route du Rhum.",
+      "logo": "OHSJD/logo.jpg"
+    },
+    {
+      "name": "Société des Experts Bois",
+      "img": [
+        "Experts bois/Experts-1.jpg",
+        "Experts bois/Experts-2.jpg",
+        "Experts bois/Experts-3.jpg",
+        null,
+        null
+      ],
+      "longDesc": "La société des Experts Bois est venue vers nous pour nous confier le travail d’une nouvelle identité. Nous avons travaillé une plaquette institutionnelle ainsi que des outils de travail pratiques et efficaces. Nous avons défini la ligne éditoriale des réseaux sociaux et réalisé une bannière web.",
+      "logo": "Experts bois/logo.jpg"
+    },
+    {
+      "name": "Angels Music Awards",
+      "img": [
+        "AMA/AMA-1.jpg",
+        "AMA/AMA-2.jpg",
+        "AMA/AMA-3.jpg",
+        null,
+        null
+      ],
+      "longDesc": "En tant que partenaire des Angels Music Awards, nous avons activement participé au lancement de la première édition. De la création de l’identité visuelle, en passant par la stratégie marketing, nous avons réalisé la campagne de promotion pour positionner et faire connaitre le show.",
+      "logo": "AMA/logo.jpg"
+    },
+    {
+      "name": "Renasup",
+      "img": [
+        "Renasup/Renasup-1.jpg",
+        "Renasup/Renasup-2.jpg",
+        null,
+        null,
+        null
+      ],
+      "longDesc": "Comment diffuser et promouvoir Renasup auprès des lycéens ? Voilà la mission que nous a confié le réseau Renasup Ile-de-France. Nous avons donc réalisé des affiches et des flyers à diffuser auprès des lycéens et sur les salons étudiants. Nous avons également réalisé une campagne adwords afin de donner plus de visibilité au site.",
+      "logo": "Renasup/logo.jpg"
+    },
+    {
+      "name": "BICE",
+      "img": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "longDesc": "L’association BICE – Bureau International Catholique de l’Enfance – nous a choisi pour concevoir et réaliser une vidéo de présentation en 3 minutes afin d’exposer la vision et les missions de l’association auprès d’un public large.",
+      "logo": "BICE/logo_bice.jpg",
+      "video": "140087910",
+      "shortDesc": "L’association BICE – Bureau International Catholique de l’Enfance – nous a choisi pour concevoir et réaliser une vidéo de présentation en 3 minutes afin d’exposer la vision et les missions de l’association auprès d’un public large."
+    },
+    {
+      "name": "Fondation d'Hautecombe",
+      "img": [
+        "Hautecombe/Hautecombe-1.jpg",
+        "Hautecombe/Hautecombe-2.jpg",
+        null,
+        null,
+        null
+      ],
+      "longDesc": "Depuis 2 ans, la Fondation d’Hautecombe nous confie sa campagne de levée de fonds grands donateurs. Nous conseillons et accompagnons la Fondation dans sa stratégie de levée de fonds : conception et réalisation du mailing, plan fichier, plan média.",
+      "logo": "Hautecombe/logo.jpg"
+    }
+  ]
+}
