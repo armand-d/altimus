@@ -150,6 +150,8 @@ angApp.controller('P2Ctrl', function($rootScope,$http,$scope) {
     $('#pic-active').on('click', function(){
         $('#no-click').show();
         $('#no-click').html('<img src="'+$(this).attr('src')+'"">');
+        $('#no-click').find('img').hide();
+        $('#no-click').find('img').fadeIn();
         $('#no-click').find('img').Center();
     });
 
