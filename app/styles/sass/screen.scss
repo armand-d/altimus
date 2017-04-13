@@ -646,7 +646,7 @@ a, a:focus, a:active
 } */
 
 .pictos-social {
-	width: 10%;
+	width: 20%;
 	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
 	cursor:pointer;
 	img, i {
@@ -663,17 +663,27 @@ a, a:focus, a:active
 		/* @include transform (scale(0.9)) */
 	}
 	i {
-	    height: 25px;
-	    line-height: 19px;
+	    height: 40px;
+	    line-height: 36px;
+	    font-size: 20px;
 	    text-align: center;
-	    width: 26px;
+	    width: 40px;
 	}
+}
+
+.footer-infos p{
+	color:white;
+	margin-top: 10px;
+    text-align: right;
+    padding-right: 10px;
+    font-family: Geometria;
 }
 
 #contact {
 	bottom: 3%;
     color: #333;
     font-weight: bold;
+    font-size: 30px;
     position: absolute;
     right: 3%;
 }
@@ -742,13 +752,11 @@ a, a:focus, a:active
 
 .nav-bottom {
 	background-color: rgba(0,0,0,0.3);
-	height:35px;
 	position:fixed;
 	bottom:0;
 	left:0;
 	right:0;
 	z-index: 100;
-	line-height:35px;
 	padding-left:1%;
 }
 
