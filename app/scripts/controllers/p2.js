@@ -83,7 +83,7 @@ angApp.controller('P2Ctrl', function($rootScope,$http,$scope) {
             		'padding-left'  : '8%'
             	});
             	$('.clients-front').css({
-            		'top' : '105%',
+            		'top' : '102%',
             		'width' : '75%',
             		'left' : '13.5%'
             	});
@@ -92,6 +92,7 @@ angApp.controller('P2Ctrl', function($rootScope,$http,$scope) {
             	});
             	$('.client').css({
             		'margin-right': '1%',
+                    'margin-bottom': '1%',
 				    'width': '6%'
             	});
             	$('.close').fadeIn(1000);

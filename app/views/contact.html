@@ -2,13 +2,41 @@
 <div id="map"></div>
 	<div class="row contact">
 		<span class="closeUp close"><i class="fa fa-eye"></i>&nbsp;Voir la carte</span>
-		<span class="open close"><i class="fa fa-chevron-left"></i></span>
-		<p>Altimus360° <br>
-		34 Boulevard du Temple <br>
-		75011 Paris <br><br>
-		<a href="mailto:contact@altimus360.com">contact@altimus360.com</a> <br><br>
-		01.75.43.16.60
-		</p>
+				<div class="col-md-8">
+				<span class="open close"><i class="fa fa-chevron-left"></i></span>
+			<form role="form" action="mailto:contact@altimus360.com?subject=subject&body=message" method="post">
+		    <div class="mtop-1">
+		        <label for="nom">Nom :</label>
+		        <input type="text" name="nom" class="form-control" required placeholder="Nom" />
+		    </div>
+		    <div class="mtop-1">
+		        <label for="mail">Mail :</label>
+		        <input type="email" name="email" class="form-control" required placeholder="Email" />
+		    </div>
+		    <div class="mtop-1">
+		        <label for="sujet">Sujet :</label>
+		        <input type="text" name="subject" class="form-control" required placeholder="Sujet" />
+		    </div>
+		    <div class="mtop-1">
+		        <label for="message">Message :</label>
+		        <textarea type="textarea" name="message" class="form-control" required placeholder="Votre message" rows="4"  cols="50" /></textarea>
+		    </div>
+		    
+		    <div class="button mtop-1">
+		        <button class="form-control" type="submit" id="submit">Envoyer votre message</button>
+		    </div>
+		</form>
+		</div>
+		<div class="col-md-4 mtop-1">
+			<p>Altimus360° <br>
+			34 Boulevard du Temple <br>
+			75011 Paris <br><br>
+			<a href="mailto:contact@altimus360.com?subject=subject">contact@altimus360.com</a> <br><br>
+			01.75.43.16.60
+			</p>
+		</div>
+
+		
 	</div>
 <script type="text/javascript">
 	function initMap() {
@@ -53,5 +81,5 @@
 	}
 </script>
 <!-- google map -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_eB7r1QetfYPU1EY_f2c8uKrqTzXfXME&callback=initMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnrrx23k58PbBrTUbRn4w4G3cxqSuQ8Ig&callback=initMap"></script>
 <!-- end google map -->
