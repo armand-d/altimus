@@ -11,6 +11,7 @@ angApp.controller('ContactCtrl', function($rootScope,$http) {
 	var contact = this;
 	$rootScope.colorBg = '#333';
 	$rootScope.animate = 'view-animate-top';
+	contact.success = null;
 
 	$('.open').hide()
 
@@ -57,9 +58,14 @@ angApp.controller('ContactCtrl', function($rootScope,$http) {
 		}
 
 		$http(req).then(function(res){
-			console.log(res);
+			contact.name = "";
+			contact.email = "";
+			contact.subject = "";
+			contact.message = "";
+			contact.success = "Votre message a bien était envoyé !"
 		}, function(){
-			console.log('ko')
+			contact.success = null;
+			alert('Erreur')
 		});
 
 
