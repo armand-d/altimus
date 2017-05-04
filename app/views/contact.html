@@ -4,22 +4,22 @@
 		<span class="closeUp close"><i class="fa fa-eye"></i>&nbsp;Voir la carte</span>
 				<div class="col-md-8">
 				<span class="open close"><i class="fa fa-chevron-left"></i></span>
-			<form role="form" action="mailto:contact@altimus360.com?subject=subject&body=message" method="post">
+		<form role="form" ng-submit="contact.sendMail()">
 		    <div class="mtop-1">
 		        <label for="nom">Nom :</label>
-		        <input type="text" name="nom" class="form-control" required placeholder="Nom" />
+		        <input type="text" name="nom" class="form-control" required placeholder="Nom" ng-model="contact.name" />
 		    </div>
 		    <div class="mtop-1">
 		        <label for="mail">Mail :</label>
-		        <input type="email" name="email" class="form-control" required placeholder="Email" />
+		        <input type="email" name="email" class="form-control" required placeholder="Email"  ng-model="contact.email" />
 		    </div>
 		    <div class="mtop-1">
 		        <label for="sujet">Sujet :</label>
-		        <input type="text" name="subject" class="form-control" required placeholder="Sujet" />
+		        <input type="text" name="subject" class="form-control" required placeholder="Sujet"  ng-model="contact.subject" />
 		    </div>
 		    <div class="mtop-1">
 		        <label for="message">Message :</label>
-		        <textarea type="textarea" name="message" class="form-control" required placeholder="Votre message" rows="4"  cols="50" /></textarea>
+		        <textarea type="textarea" name="message" class="form-control" required placeholder="Votre message" rows="4"  cols="50"  ng-model="contact.message" /></textarea>
 		    </div>
 		    
 		    <div class="button mtop-1">
@@ -80,6 +80,7 @@
 
 	}
 </script>
+
 <!-- google map -->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnrrx23k58PbBrTUbRn4w4G3cxqSuQ8Ig&callback=initMap"></script>
 <!-- end google map -->

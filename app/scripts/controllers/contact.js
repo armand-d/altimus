@@ -7,7 +7,8 @@
  * # ContactCtrl
  * Controller of the altimusApp
  */
-angApp.controller('ContactCtrl', function($rootScope) {
+angApp.controller('ContactCtrl', function($rootScope,$http) {
+	var contact = this;
 	$rootScope.colorBg = '#333';
 	$rootScope.animate = 'view-animate-top';
 
@@ -38,5 +39,30 @@ angApp.controller('ContactCtrl', function($rootScope) {
 			'right': ''
 		});
 	});
+
+	contact.sendMail = _ => {
+		
+		var req = {
+		 method: 'GET',
+		 url: 'http://mobile.altimus360.com/sendMail.php',
+		 headers: {
+		   'Content-Type': undefined
+		 },
+		 params: { 
+		 		name: contact.name,
+				email: contact.email,
+				subject: contact.subject,
+				message: contact.message
+			}
+		}
+
+		$http(req).then(function(res){
+			console.log(res);
+		}, function(){
+			console.log('ko')
+		});
+
+
+	}
 
 });
