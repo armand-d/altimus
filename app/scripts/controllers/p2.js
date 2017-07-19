@@ -85,7 +85,8 @@ angApp.controller('P2Ctrl', function($rootScope,$http,$scope) {
             	$('.clients-front').css({
             		'top' : '102%',
             		'width' : '75%',
-            		'left' : '13.5%'
+            		'left' : '13.5%',
+                    'overflow-y' : 'hidden'
             	});
             	$('.content-infos').css({
             		'top' : '10%'
@@ -120,7 +121,8 @@ angApp.controller('P2Ctrl', function($rootScope,$http,$scope) {
     	$('.clients-front').css({
     		'top' : '',
     		'width' : '',
-    		'left' : ''
+    		'left' : '',
+            'overflow-y' : ''
     	});
     	$('.head h3').css({
     		'left' : '',
