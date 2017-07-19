@@ -1,3 +1,14 @@
+@media screen and (max-height: 760px) {
+	.clients-front{
+		overflow-y: scroll;
+    	height: calc(100vh - 28vw);
+	}
+	.infos {
+		overflow-y: scroll;
+    	height: calc(100vh - 28vw);
+	}
+}
+
 @media screen and (max-width: 1025px) {
 	
 	.logo-full {
@@ -6,6 +17,8 @@
 			width: 120px;
 		} 
 	}
+
+
 }
 
 @media screen and (max-width: 1000px) {
